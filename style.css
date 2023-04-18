@@ -1,44 +1,49 @@
+/* style.css */
 :root {
-  --text: #2b3044;
-  --line: #bbc1e1;
-  --line-active: #275efe;
-}
-p {
+  --text: #2B3044;
+  --line: #BBC1E1;
+  --line-active: #275EFE;
+  }
+  
+  p {
   font-size: 18px;
   margin: 0;
   color: var(--text);
-}
-p a {
+  }
+  
+  p a {
   display: inline-block;
   position: relative;
   text-decoration: none;
   color: inherit;
   margin: 0 var(--spacing, 0px);
-  transition: margin 0.25s;
-}
-
-p a svg {
+  transition: margin .25s;
+  }
+  
+  p a svg {
   width: 76px;
   height: 40px;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 7px) translate(0);
+  transform: translate(-50%, 7px) translateZ(0);
   fill: none;
   stroke: var(--stroke, var(--line));
   stroke-linecap: round;
   stroke-width: 2px;
-  stroke-dasharray: var(--offset,69px) 278px;
+  stroke-dasharray: var(--offset, 69px) 278px;
   stroke-dashoffset: 361px;
-  transition: stroke .25s ease var(--stroke-delay,0s),stroke-dasharray .35s;
-}
-
-p a:hover{
-    --spacing:4px;
-    --stroke:var(--line-action);
-    --stroke-delay: 0.1s:
-    --offset: 180px;
-}
+  transition: stroke .25s ease var(--stroke-delay,
+   0s), stroke-dasharray .35s;
+  }
+  
+  p a:hover {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
+  }
+  
   html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -60,3 +65,4 @@ p a:hover{
   align-items: center;
   background: #F6F8FF;
   }
+  
