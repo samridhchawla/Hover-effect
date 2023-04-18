@@ -1,0 +1,28 @@
+:root {
+  --text: #2b3044;
+  --line: #bbc1e1;
+  --line-active: #275efe;
+}
+p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--text);
+}
+p a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 var(--spacing, 0px);
+  transition: margin 0.25s;
+}
+
+p a svg {
+  width: 76px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 7px) translate(0);
+  translate: none;
+}
